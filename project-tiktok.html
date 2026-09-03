@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prediksi Popularitas TikTok | Stephanie Asseta Amiwan</title>
+<meta name="description" content="Detail proyek prediksi popularitas konten mental health TikTok dengan IndoBERT + XGBoost.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-mark">&lt;Stephanie/&gt;</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Contact Me</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+<section class="section">
+  <div class="section-inner">
+
+    <a href="index.html#projects" class="detail-back"><span aria-hidden="true">←</span> Back to Projects</a>
+
+    <div class="detail-header">
+      <p class="detail-kicker">Tugas Akhir · Hybrid IndoBERT + XGBoost</p>
+      <h1 class="detail-title">Prediksi Popularitas Konten Mental Health TikTok</h1>
+      <p class="detail-summary">
+        Model machine learning hybrid untuk mengklasifikasikan tingkat popularitas konten
+        bertema kesehatan mental di TikTok Indonesia, dikembangkan sebagai tugas akhir
+        (skripsi) dengan pendekatan gabungan representasi bahasa (IndoBERT) dan model
+        boosting (XGBoost).
+      </p>
+    </div>
+
+    <!-- ================= GALLERY ================= -->
+    <div class="gallery">
+      <div class="gallery-track" id="galleryTrack">
+
+        <div class="gallery-slide active" data-caption="Dashboard">
+          <img src="img/dashboard-tiktok.png" alt="Dashboard">
+        </div>
+
+        <div class="gallery-slide" data-caption="Form Prediksi">
+          <img src="img/form1-tiktok.png" alt="Form Prediksi">
+        </div>
+
+        <div class="gallery-slide" data-caption="Scrapping Data">
+          <img src="img/form2-tiktok.png" alt="Scrapping Data">
+        </div>
+        <div class="gallery-slide" data-caption="Result">
+          <img src="img/hasil-tiktok.png" alt="Result">
+        </div>
+        <div class="gallery-slide" data-caption="History">
+          <img src="img/riwayat-tiktok.png" alt="History">
+        </div>
+
+      </div>
+
+      <button class="gallery-zone gallery-zone-prev" aria-label="Gambar sebelumnya">
+        <span class="gallery-arrow">‹</span>
+      </button>
+      <button class="gallery-zone gallery-zone-next" aria-label="Gambar berikutnya">
+        <span class="gallery-arrow">›</span>
+      </button>
+
+      <p class="gallery-caption">Dashboard Hasil Evaluasi Model</p>
+
+      <div class="gallery-dots"></div>
+    </div>
+
+    <!-- ================= CONTENT ================= -->
+    <div class="detail-grid">
+      <div>
+        <div class="detail-block">
+          <h3>Fungsi Proyek</h3>
+          <p>
+            Proyek ini bertujuan membangun model yang mampu memprediksi seberapa populer sebuah
+            konten TikTok bertema kesehatan mental, berdasarkan fitur teks (caption, komentar)
+            dan metadata konten — membantu memahami pola konten yang paling banyak menjangkau
+            audiens di topik sensitif seperti kesehatan mental.
+          </p>
+        </div>
+
+        <div class="detail-block">
+          <h3>Fitur &amp; Tahapan yang Dikerjakan</h3>
+          <ul class="detail-feature-list">
+            <li>Pengumpulan dan pembersihan data konten TikTok berbahasa Indonesia</li>
+            <li>Preprocessing teks (tokenisasi, normalisasi, penghapusan noise)</li>
+            <li>Penyeimbangan data dengan teknik SMOTENC untuk mengatasi data tidak seimbang</li>
+            <li>Ekstraksi representasi teks menggunakan IndoBERT</li>
+            <li>Feature engineering menggabungkan representasi IndoBERT dengan fitur metadata</li>
+            <li>Klasifikasi popularitas konten menggunakan XGBoost</li>
+            <li>Evaluasi model dengan metrik akurasi, precision, recall, dan F1-score</li>
+          </ul>
+        </div>
+
+        <div class="detail-block">
+          <h3>Hasil</h3>
+          <p>
+            Model hybrid IndoBERT + XGBoost berhasil mencapai akurasi evaluasi sebesar
+            <strong>90,60%</strong> dalam mengklasifikasikan popularitas konten.
+          </p>
+        </div>
+      </div>
+
+      <aside class="detail-side">
+        <h3>Tools &amp; Teknologi</h3>
+        <div class="detail-tool-list">
+          <span>Python</span><span>IndoBERT</span><span>XGBoost</span><span>Scikit-learn</span><span>Pandas</span><span>SMOTENC</span>
+        </div>
+
+        <div class="detail-meta">
+          <div class="detail-meta-item">
+            <span>Peran Saya</span>
+            <p>Peneliti Tunggal — Tugas Akhir</p>
+          </div>
+          <div class="detail-meta-item">
+            <span>Fokus</span>
+            <p>Natural Language Processing &amp; Machine Learning</p>
+          </div>
+          <div class="detail-meta-item">
+            <span>Akurasi Model</span>
+            <p>90,60%</p>
+          </div>
+          <div class="detail-meta-item">
+            <span>Pembimbing</span>
+            <p>Lita Karlitasari &amp; Asep Saepulrohman</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+    
+    <div class="detail-nav">
+      <a href="project-lms.html" class="detail-nav-link" aria-label="Proyek sebelumnya: LMS POLBANGTAN Bogor">‹</a>
+      <a href="project-museum.html" class="detail-nav-link" aria-label="Proyek selanjutnya: Hall of Memories">›</a>
+    </div>
+ 
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="section-inner footer-inner">
+    <p>© 2026 Stephanie Asseta Amiwan.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

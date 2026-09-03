@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LMS POLBANGTAN Bogor | Stephanie Asseta Amiwan</title>
+    <meta
+      name="description"
+      content="Detail proyek Learning Management System POLBANGTAN Bogor."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ================= NAV ================= -->
+    <nav class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-mark">&lt;Stephanie/&gt;</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Buka menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact" class="nav-cta">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section class="section">
+        <div class="section-inner">
+          <a href="index.html#projects" class="detail-back"
+            ><span aria-hidden="true">←</span> Back to Projects</a
+          >
+
+          <div class="detail-header">
+            <p class="detail-kicker">Intership · Agu 2025 – Okt 2025</p>
+            <h1 class="detail-title">LMS POLBANGTAN Bogor</h1>
+            <p class="detail-summary">
+              Prototype Sistem pembelajaran (Learning Management System)
+              berbasis web yang dikembangkan selama praktik lapang di Unit
+              Teknologi Informasi dan Komunikasi (TIK) POLBANGTAN Bogor,
+              mencakup empat peran pengguna dengan modul akademik lengkap.
+            </p>
+          </div>
+
+          <!-- ================= GALLERY ================= -->
+          <div class="gallery">
+            <div class="gallery-track" id="galleryTrack">
+              <div class="gallery-slide active" data-caption="Admin-Dashboard">
+                <img src="img/dashboard-adm.png" alt="Dashboard Admin LMS" />
+              </div>
+
+              <div class="gallery-slide" data-caption="Admin-Users Management">
+                <img src="img/user-admin.png" alt="Kelola users" />
+              </div>
+
+              <div class="gallery-slide" data-caption="Admin-Course Management">
+                <img src="img/course-admin.png" alt="Kelola course" />
+              </div>
+
+              <div
+                class="gallery-slide"
+                data-caption="Admin-Announcement Management"
+              >
+                <img src="img/announce-admin.png" alt="Kelola pengumuman" />
+              </div>
+
+              <div
+                class="gallery-slide"
+                data-caption="Mahasiswa-Enrollment Course"
+              >
+                <img src="img/enroll-mh.png" alt="enroll LMS" />
+              </div>
+
+              <div class="gallery-slide" data-caption="Mahasiswa-Course">
+                <img src="img/course-mh.png" alt="course LMS" />
+              </div>
+
+              <div class="gallery-slide" data-caption="Mahasiswa-Materi">
+                <img src="img/materi-mh.png" alt="Materi LMS" />
+              </div>
+
+              <div class="gallery-slide" data-caption="Mahasiswa-Presensi">
+                <img src="img/absen-mh.png" alt="presensi LMS" />
+              </div>
+
+              <div
+                class="gallery-slide"
+                data-caption="Mahasiswa-Roomchat Diskusi"
+              >
+                <img src="img/chat-mh.png" alt="Diskusi LMS" />
+              </div>
+            </div>
+            <button
+              class="gallery-zone gallery-zone-prev"
+              aria-label="Gambar sebelumnya"
+            >
+              <span class="gallery-arrow">‹</span>
+            </button>
+
+            <button
+              class="gallery-zone gallery-zone-next"
+              aria-label="Gambar berikutnya"
+            >
+              <span class="gallery-arrow">›</span>
+            </button>
+
+            <p class="gallery-caption">Dashboard Admin</p>
+
+            <div class="gallery-dots"></div>
+          </div>
+
+          <!-- ================= CONTENT ================= -->
+          <div class="detail-grid">
+            <div>
+              <div class="detail-block">
+                <h3>Fungsi Website</h3>
+                <p>
+                  LMS ini dibangun untuk memusatkan pengelolaan materi,
+                  penugasan, evaluasi, dan komunikasi pembelajaran, sekaligus
+                  mempermudah civitas akademika dalam mengelola dan mengikuti
+                  proses pembelajaran secara digital.
+                </p>
+              </div>
+
+              <div class="detail-block">
+                <h3>Fitur-fitur yang Dibuat</h3>
+                <ul class="detail-feature-list">
+                  <li>
+                    Multi-role User Management — Admin, Dosen, Mahasiswa, dan
+                    Operator Prodi
+                  </li>
+                  <li>Course Management — pengelolaan kelas dan mata kuliah</li>
+                  <li>
+                    Course Enrollment — mahasiswa dapat mendaftar/enroll ke
+                    kelas
+                  </li>
+                  <li>
+                    Learning Materials — preview dan download materi
+                    pembelajaran
+                  </li>
+                  <li>
+                    Assignment Management — melihat, mengumpulkan tugas, dan
+                    deadline
+                  </li>
+                  <li>Attendance — pencatatan kehadiran mahasiswa</li>
+                  <li>Discussion — roomchat antara dosen dan mahasiswa</li>
+                  <li>
+                    KRS Management — upload KRS untuk proses persetujuan dosen
+                    wali
+                  </li>
+                  <li>Announcement — pengelolaan dan penyampaian pengumuman</li>
+                  <li>Schedule — informasi jadwal, tugas, dan kehadiran</li>
+                </ul>
+              </div>
+
+              <div class="detail-block">
+                <h3>Keterangan</h3>
+                <p>
+                  Dikembangkan dengan metode SDLC Waterfall, dimulai dari
+                  analisis kebutuhan pengguna, perancangan basis data (15+ tabel
+                  relasional), penyusunan DFD dan flowchart, hingga pemrograman
+                  dan pengujian sistem secara menyeluruh.
+                </p>
+              </div>
+            </div>
+
+            <aside class="detail-side">
+              <h3>Tools &amp; Teknologi</h3>
+              <div class="detail-tool-list">
+                <span>PHP</span><span>MySQL</span><span>JavaScript</span
+                ><span>HTML</span><span>CSS</span>
+              </div>
+
+              <div class="detail-meta">
+                <div class="detail-meta-item">
+                  <span>Peran Saya</span>
+                  <p>Web Development Intership</p>
+                </div>
+                <div class="detail-meta-item">
+                  <span>Durasi</span>
+                  <p>Agustus 2025 – Oktober 2025</p>
+                </div>
+                <div class="detail-meta-item">
+                  <span>Status</span>
+                  <p>Terdaftar sebagai HKI, Kementerian Hukum RI (Des 2025)</p>
+                </div>
+                <div class="detail-meta-item">
+                  <span>Institusi</span>
+                  <p>POLBANGTAN Bogor — Unit TIK</p>
+                </div>
+              </div>
+            </aside>
+          </div>
+
+
+<div class="detail-nav">
+            <a href="project-museum.html" class="detail-nav-link" aria-label="Proyek sebelumnya: Hall of Memories">‹</a>
+            <a href="project-tiktok.html" class="detail-nav-link" aria-label="Proyek selanjutnya: Prediksi Popularitas TikTok">›</a>
+          </div>
+        </div>
+      </section>
+    </main>
+ 
+
+    <footer class="footer">
+      <div class="section-inner footer-inner">
+        <p>© 2026 Stephanie Asseta Amiwan.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
