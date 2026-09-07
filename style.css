@@ -307,76 +307,59 @@ body.intro-active{ overflow:hidden; height:100vh; }
 .about-grid{
   display:grid; grid-template-columns:0.75fr 1.25fr; gap:64px; align-items:center;
 }
-/* =========================================================
-   ABOUT PHOTO — UI/UX style cutout (ganti bagian .about-photo lama)
-========================================================= */
-.about-photo{
-  position:relative;
-  padding:24px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+.about-photo{ position:relative; padding:16px 16px 16px 36px; }
+
+/* Shape organik solid besar di belakang foto — pengganti kartu angka pencapaian di referensi */
+.about-shape{
+  position:absolute; z-index:0;
+  top:4%; left:14%; width:82%; height:92%;
+  background:linear-gradient(155deg, var(--clay) 0%, var(--coffee-2) 100%);
+  border-radius:42% 58% 63% 37% / 46% 40% 60% 54%;
 }
 
-/* Blob organik di belakang foto, warna sesuai tema coffee/clay */
+/* Pola titik dekoratif pojok kiri-atas, seperti di referensi */
+.about-dots{
+  position:absolute; z-index:2; top:-6px; left:-6px;
+  width:72px; height:72px;
+  background-image:radial-gradient(var(--clay) 1.6px, transparent 1.6px);
+  background-size:12px 12px;
+  opacity:0.55;
+}
+
+/* Ring putus-putus mengelilingi foto */
+.about-photo-ring{
+  position:absolute; z-index:1;
+  top:0%; left:10%; width:86%; height:98%;
+  border:1.5px dashed rgba(169,118,90,0.45);
+  border-radius:46% 54% 58% 42% / 50% 44% 56% 50%;
+  animation: heroRingSpin 30s linear infinite;
+}
+
+.about-blob{
+  position:absolute; border-radius:50%; filter:blur(34px);
+  z-index:0; opacity:0.6;
+}
 .about-blob-1{
-  width:220px; height:220px; top:-10px; left:-20px;
+  width:180px; height:180px; top:-30px; left:-10px;
   background:radial-gradient(circle, #C99A78 0%, #A9765A 55%, transparent 75%);
 }
 .about-blob-2{
-  width:170px; height:170px; bottom:-10px; right:-10px;
+  width:150px; height:150px; bottom:-20px; right:-20px;
   background:radial-gradient(circle, #6B4E36 0%, #3B2C21 60%, transparent 78%);
-  opacity:0.5;
+  opacity:0.45;
 }
-
-/* Bentuk dasar organik solid di belakang foto (efek "UI/UX card") */
-.about-photo::before{
-  content:"";
-  position:absolute;
-  z-index:0;
-  top:6%;
-  left:10%;
-  width:80%;
-  height:88%;
-  background:linear-gradient(155deg, var(--clay) 0%, var(--coffee-2) 100%);
-  border-radius:44% 56% 62% 38% / 48% 42% 58% 52%;
-}
-
-/* Ring dekoratif putus-putus, sama seperti di hero */
-.about-photo::after{
-  content:"";
-  position:absolute;
-  z-index:1;
-  top:0%;
-  left:4%;
-  width:88%;
-  height:96%;
-  border:1.5px dashed rgba(169,118,90,0.45);
-  border-radius:48% 52% 55% 45% / 55% 48% 52% 45%;
-  animation: heroRingSpin 30s linear infinite;
-  pointer-events:none;
-}
-
 .about-photo img{
-  position:relative;
-  z-index:2;
-  width:100%;
-  display:block;
-  border-radius:24% 24% 6% 6% / 12% 12% 4% 4%;
-  filter:drop-shadow(0 24px 26px rgba(42,31,23,0.32));
+  position:relative; z-index:1; width:100%; display:block;
+  filter:drop-shadow(0 26px 28px rgba(42,31,23,0.35));
 }
-
-/* Sparkle kecil, dekorasi ringan */
 .about-sparkle{
-  position:absolute; z-index:3; width:18px; height:18px; color:var(--clay);
+  position:absolute; z-index:2; width:18px; height:18px; color:var(--clay);
   animation: sparkleTwinkle 2.6s ease-in-out infinite;
 }
 .about-sparkle-1{ top:4%; right:2%; }
 .about-sparkle-2{ bottom:8%; left:0%; width:14px; height:14px; animation-delay:1.2s; }
-
-/* Badge melayang, gaya sama dengan hero-badge tapi lebih kecil */
 .about-badge{
-  position:absolute; z-index:4; left:50%; bottom:-6px; transform:translateX(-50%);
+  position:absolute; z-index:2; left:50%; bottom:-6px; transform:translateX(-50%);
   display:flex; align-items:center; gap:8px;
   background:var(--cream-2); border:1px solid var(--line);
   padding:10px 16px; border-radius:100px;
@@ -384,14 +367,7 @@ body.intro-active{ overflow:hidden; height:100vh; }
   box-shadow:0 14px 28px -14px rgba(59,44,33,0.3);
   white-space:nowrap;
 }
-.about-badge-dot{
-  width:7px; height:7px; border-radius:50%; background:var(--clay);
-}
-
-@media (max-width:900px){
-  .about-photo{ max-width:280px; margin:0 auto; padding:16px; }
-  .about-sparkle{ display:none; }
-}
+.about-badge-dot{ width:7px; height:7px; border-radius:50%; background:var(--clay); }
 .about-photo-placeholder{
   position:relative; z-index:1;
   aspect-ratio:3/4; border-radius:16px;
@@ -488,24 +464,22 @@ body.intro-active{ overflow:hidden; height:100vh; }
   border-color:var(--clay);
 }
 .cred-cover{
-  width:100%; height:120px; border-radius:8px; overflow:hidden;
-  margin-bottom:18px; box-shadow:0 10px 22px -10px rgba(59,44,33,0.4);
+  width:100%; height:120px; overflow:hidden;
+  margin-bottom:18px;
   transition:transform .3s var(--ease);
-  background:var(--paper);
   display:flex; align-items:center; justify-content:center;
-  padding:6px;
 }
 .cred-card:hover .cred-cover{ transform:scale(1.02); }
 .cred-cover img{
   max-width:100%; max-height:100%; width:auto; height:auto;
-  object-fit:contain; display:block; border-radius:3px;
+  object-fit:contain; display:block; border-radius:6px;
+  box-shadow:0 10px 22px -10px rgba(59,44,33,0.4);
 }
 .cred-cover-placeholder{
   width:100%; height:100%; background:linear-gradient(160deg, var(--mocha), var(--coffee-2));
   display:flex; align-items:center; justify-content:center; padding:8px;
   border-radius:3px;
 }
-
 .cred-cover-landscape{ height:95px; }
 .cred-cover-placeholder span{
   font-size:9px; line-height:1.5; color:var(--cream-2); text-align:center; opacity:0.85;
@@ -661,8 +635,10 @@ body.cert-modal-active{ overflow:hidden; }
   .hero-sparkle{ display:none; }
   .hero-badge{ left:50%; transform:translateX(-50%); bottom:-18px; white-space:nowrap; }
   .about-grid{ grid-template-columns:1fr; gap:36px; }
-  .about-photo{ max-width:260px; margin:0 auto; }
+  .about-photo{ max-width:260px; margin:0 auto; padding-left:16px; }
   .about-blob-1, .about-blob-2{ width:110px; height:110px; }
+  .about-dots{ width:48px; height:48px; }
+  .about-sparkle{ display:none; }
   .about-cards{ grid-template-columns:1fr; }
   .offer-grid{ grid-template-columns:1fr; }
   .project-grid{ grid-template-columns:1fr; }
@@ -713,14 +689,14 @@ body.cert-modal-active{ overflow:hidden; }
   background:var(--coffee-2);
   box-shadow:0 40px 80px -36px rgba(59,44,33,0.45);
 }
-.gallery-track{ position:relative; aspect-ratio:16/10; }
+.gallery-track{ position:relative; aspect-ratio:16/9; background:var(--coffee-2); }
 .gallery-slide{
   position:absolute; inset:0;
   opacity:0; visibility:hidden;
   transition:opacity .4s var(--ease);
 }
 .gallery-slide.active{ opacity:1; visibility:visible; }
-.gallery-slide img{ width:100%; height:100%; object-fit:cover; display:block; }
+.gallery-slide img{ width:100%; height:100%; object-fit:contain; display:block; }
 .gallery-slide .thumb-mockup{ width:100%; height:100%; display:block; }
 
 .gallery-zone{
