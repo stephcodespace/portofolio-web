@@ -1,0 +1,278 @@
+
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taskly | Stephanie Asseta Amiwan</title>
+    <meta
+      name="description"
+      content="Detail proyek Taskly, aplikasi manajemen tugas berbasis web."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ================= NAV ================= -->
+    <nav class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-mark">&lt;Stephanie/&gt;</a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Buka menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact" class="nav-cta">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section class="section">
+        <div class="section-inner">
+          <a href="index.html#projects" class="detail-back">
+            <span aria-hidden="true">←</span> Back to Projects
+          </a>
+
+          <!-- ================= HEADER ================= -->
+          <div class="detail-header">
+            <p class="detail-kicker">Personal Project · 2026</p>
+
+            <h1 class="detail-title">Taskly — Task Management App</h1>
+
+            <p class="detail-summary">
+              Aplikasi manajemen tugas berbasis web yang dirancang untuk
+              membantu pengguna mengatur aktivitas sehari-hari melalui
+              tampilan Kanban Board. Dilengkapi dengan pengelolaan tugas,
+              prioritas, tenggat waktu, autentikasi pengguna, dan penyimpanan
+              data secara online.
+            </p>
+
+            <div class="detail-actions">
+              <a
+                href="https://taskly-eight-sepia.vercel.app/"
+                class="project-detail-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Demo <span aria-hidden="true">↗</span>
+              </a>
+
+             
+            </div>
+          </div>
+
+          <!-- ================= GALLERY ================= -->
+          <div class="gallery">
+            <div class="gallery-track" id="galleryTrack">
+              <div
+                class="gallery-slide active"
+                data-caption="Dashboard Light Theme"
+              >
+                <img
+                  src="img/taskly-dashboard.png"
+                  alt="Dashboard utama Taskly"
+                />
+              </div>
+              <div
+                class="gallery-slide"
+                data-caption="Dashboard Dark Theme"
+              >
+                <img
+                  src="img/taskly-dashboard 2.png"
+                  alt="Dashboard utama Taskly"
+                />
+              </div>
+
+              <div
+                class="gallery-slide"
+                data-caption="Dashboard — Kanban Board"
+              >
+                <img
+                  src="img/taskly-kanban.png"
+                  alt="Tampilan Kanban Board Taskly"
+                />
+              </div>
+
+              <div
+                class="gallery-slide"
+                data-caption="Login — User Authentication"
+              >
+                <img
+                  src="img/taskly-login.png"
+                  alt="Halaman login Taskly"
+                />
+              </div>
+
+              <div
+                class="gallery-slide"
+                data-caption="Register — Create Account"
+              >
+                <img
+                  src="img/taskly-regist.png"
+                  alt="Halaman registrasi Taskly"
+                />
+              </div>
+            </div>
+
+            <button
+              class="gallery-zone gallery-zone-prev"
+              aria-label="Gambar sebelumnya"
+            >
+              <span class="gallery-arrow">‹</span>
+            </button>
+
+            <button
+              class="gallery-zone gallery-zone-next"
+              aria-label="Gambar berikutnya"
+            >
+              <span class="gallery-arrow">›</span>
+            </button>
+
+            <p class="gallery-caption">Dashboard — Task Overview</p>
+
+            <div class="gallery-dots"></div>
+          </div>
+
+          <!-- ================= CONTENT ================= -->
+          <div class="detail-grid">
+            <div>
+              <div class="detail-block">
+                <h3>Fungsi Website</h3>
+                <p>
+                  Taskly dikembangkan sebagai aplikasi untuk membantu pengguna
+                  mengelola dan memantau tugas dalam satu dashboard. Pengguna
+                  dapat mengatur status pekerjaan, menentukan prioritas,
+                  menetapkan tenggat waktu, serta melihat perkembangan tugas
+                  melalui tampilan Kanban Board yang responsif.
+                </p>
+              </div>
+
+              <div class="detail-block">
+                <h3>Fitur-fitur yang Dibuat</h3>
+                <ul class="detail-feature-list">
+                  <li>
+                    User Authentication — registrasi dan login menggunakan
+                    akun pengguna
+                  </li>
+                  <li>
+                    Kanban Board — pengelompokan tugas berdasarkan status
+                    To Do, In Progress, dan Done
+                  </li>
+                  <li>
+                    Task Management — menambah, mengubah, dan menghapus tugas
+                  </li>
+                  <li>
+                    Task Priority — pengaturan tingkat prioritas tugas
+                  </li>
+                  <li>
+                    Due Date — penentuan dan pemantauan tenggat waktu
+                  </li>
+                  <li>
+                    Overdue Indicator — penanda visual untuk tugas yang
+                    melewati tenggat waktu dan belum selesai
+                  </li>
+                  <li>
+                    Cloud Data Storage — penyimpanan data tugas secara online
+                  </li>
+                  <li>
+                    Responsive Design — tampilan yang menyesuaikan perangkat
+                  </li>
+                  <li>
+                    Dark Mode — pilihan tampilan terang dan gelap
+                  </li>
+                </ul>
+              </div>
+
+              <div class="detail-block">
+                <h3>Keterangan</h3>
+                <p>
+                  Proyek ini dikembangkan secara mandiri dengan Next.js dan
+                  TypeScript menggunakan pendekatan komponen untuk membangun
+                  antarmuka yang terstruktur. Zustand digunakan untuk
+                  pengelolaan state aplikasi, sedangkan Supabase dimanfaatkan
+                  untuk autentikasi dan penyimpanan data. Aplikasi kemudian
+                  dideploy menggunakan Vercel.
+                </p>
+              </div>
+            </div>
+
+            <aside class="detail-side">
+              <h3>Tools &amp; Teknologi</h3>
+
+              <div class="detail-tool-list">
+                <span>Next.js</span>
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>Tailwind CSS</span>
+                <span>Zustand</span>
+                <span>Supabase</span>
+                <span>PostgreSQL</span>
+              </div>
+
+              <div class="detail-meta">
+                <div class="detail-meta-item">
+                  <span>Peran Saya</span>
+                  <p>Frontend Development</p>
+                </div>
+
+                <div class="detail-meta-item">
+                  <span>Durasi</span>
+                  <p>2026</p>
+                </div>
+
+                <div class="detail-meta-item">
+                  <span>Status</span>
+                  <p>Deployed — Vercel</p>
+                </div>
+
+                <div class="detail-meta-item">
+                  <span>Jenis Proyek</span>
+                  <p>Personal Project</p>
+                </div>
+              </div>
+            </aside>
+          </div>
+
+          <!-- ================= PROJECT NAVIGATION ================= -->
+          <div class="detail-nav">
+            <a
+              href="project-museum.html"
+              class="detail-nav-link"
+              aria-label="Proyek selanjutnya: Hall of Memories"
+            >
+              ‹
+            </a>
+
+            <a
+              href="project-lms.html"
+              class="detail-nav-link"
+              aria-label="Proyek sebelumnya: LMS POLBANGTAN Bogor"
+            >
+              ›
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="section-inner footer-inner">
+        <p>© 2026 Stephanie Asseta Amiwan.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
